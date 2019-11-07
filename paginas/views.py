@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
+from django.views.generic import TemplateView
 # Create your views here.
 
-def index(request):
-    context = {'var': var}
-    return render(request, 'templates/home.html', context)
+class HomePageView(TemplateView):
+    template_name = 'home.html'
