@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="en">
  
 <head>
  
@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>CORUJÃO</title>
+    <title>Cover Template · Bootstrap</title>
  
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/cover/">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -37,30 +37,37 @@
         }
     </style>
     <!-- Custom styles for this template -->
-    <link href="..\static\css\cover.css" rel="stylesheet">
+    <link href="../static/css/cadastrado.css" rel="stylesheet">
 </head>
  
-<body class="text-center">
-    
-        <nav class="navbar navbar-expand-md navbar fixed-top bg">
-            <a class="navbar-brand" href="{% url 'home' %}" style="color:#4986f4"> Página Inicial</a> 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <a class="navbar-brand" href="{% url 'sobre' %}" style="color:#4986f4">Sobre</a> 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-            
-                </div>
-                <div class="dalila">
-                <a class="btn btn-outline-primary" href="{% url 'cadastro' %}">Sign up</a>
-                <a class="btn btn-outline-primary" href="{% url 'login' %}">Login</a></div>
-              </nav>
+<body class="text-center" background="../static/img/cadastrado.png">
  
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar fixed-top bg">
+            <a class="navbar-brand" href="{% url 'home' %}" style="color:#4986f4"> Página Inicial</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <a class="navbar-brand" href="{% url 'sobre' %}" style="color:#4986f4">Sobre</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        </nav>
+ 
+        <div class="sobre">
+            <div class="card text-center" id=sobre>
+                <div class="card-body">
+                    
+                    <h1 class="card-title" style="color:#4986f4;"><b>Cadastro realizado com sucesso!</b></h1>
+                    <a class="btn btn-primary" href="{% url 'login' %}" role="button">Login</a>
+ 
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
  
 </html>

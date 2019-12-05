@@ -8,7 +8,7 @@
 	<meta name="author" content="">
 	<link rel="icon" href="../../../../favicon.ico">
 
-	<title>Template de login, usando Bootstrap.</title>
+	<title>CORUJÃO</title>
 
 	<!-- Principal CSS do Bootstrap -->
 	<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -33,14 +33,13 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarCollapse">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Sobre<span class="sr-only">(current)</span></a>
-				</li>
+                <a class="navbar-brand" href="{% url 'sobre' %}" style="color:#4986f4">Sobre</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-			</ul>
-
-		</div>
+            </div>
 		<div class="dalila">
 			<a class="btn btn-outline-primary" href="{% url 'cadastro' %}">Sign up</a>
 		</div>
@@ -48,7 +47,7 @@
 	<form class="form-signin">
 		<img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
 		<label for="inputEmail" class="sr-only">Endereço de matrícula</label>
-		<input type="email" id="inputEmail" class="form-control" placeholder="Matrícula" required autofocus>
+		<input type="text" id="inputEmail" class="form-control" placeholder="Matrícula" required autofocus>
 
 		<label for="inputPassword" class="sr-only">Senha</label>
 		<input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
@@ -58,7 +57,7 @@
 				<font style="color:white">Lembrar de mim</font></input>
 			</label>
 		</div>
-		<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+		<a class="btn btn-primary btn-lg btn-block" href="{% url 'dashboard' %}" role="button">Entrar</a>
 		<p class="mt-5 mb-3 text-muted">&copy;D²PA</p>
 	</form>
 </body>

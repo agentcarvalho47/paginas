@@ -25,12 +25,11 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Sobre<span class="sr-only">(current)</span></a>
-        </li>
-
-      </ul>
+        <a class="navbar-brand" href="{% url 'sobre' %}" style="color:#4986f4">Sobre</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
     </div>
     <div class="dalila">
@@ -46,7 +45,7 @@
 
         <input type="text" autocomplete="off" placeholder="Nome" name="nome" maxlength="20"><br>
         <input type="email" placeholder="Email" name="email"><br>
-        <input type="password" placeholder="senha" name="senha"><br>
+        <input type="password" placeholder="Senha" name="senha"><br>
         <input type="text" placeholder="Matrícula" name="matricula" maxlength="20"><br>
         <input type="submit" value="Cadastrar-se">
 

@@ -25,5 +25,5 @@ class Aluno(models.Model):
         blank=False
     )
     def get_absolute_url(self): # Insira no final do model
-        return reverse('home')
+        return reverse('sucessfull')
     

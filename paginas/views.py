@@ -9,3 +9,10 @@ class CadastroCreateView(CreateView):
 	fields = ['nome', 'email', 'senha', 'matricula']
 class LoginPageView(TemplateView):
     template_name = "login.html"    
+class SobrePageView(TemplateView):
+	template_name = "sobre.html"
+class AreaAlunoPageView(TemplateView):
+	template_name = "areaaluno.html"
+class LogaPageView(TemplateView):
+	template_name = "logged.html"	
+
