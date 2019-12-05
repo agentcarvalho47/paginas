@@ -1,0 +1,132 @@
+div.box {
+  width: 200px;
+  display: inline-block;
+}
+
+body{
+  display: block;
+  padding: 0;
+  text-align: center;
+  color: black;
+  font-family: arial;
+  background-image: url("../img/paa.png");
+  background-position: 30% 45%;
+  background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+
+}
+input{
+  display: block;
+  height: 55px;
+  width: 400px;
+  margin: 11px;
+  border-radius: 30px;
+  border: 1px solid white;
+      font-size: 20;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: white;
+      color: #2F4F4F;
+  outline: none;
+
+}
+
+label{
+  display: block;
+  text-align: left;
+  padding: 4px;
+  font-size: 18;
+}
+p{
+  text-align: center;
+  padding: 2px;
+  font-size: 15;
+
+}
+
+div#corpo-form{
+  width: 420px;
+  margin: 110px auto 0px auto;
+}
+
+div#corpo-form-cad{
+  width: 420px;
+  margin: 40px auto 0px auto;
+}
+
+div#corpo-form h1, div#corpo-form-cad h1{
+  text-align: center;
+  font-size: 80;
+  padding: 20px;
+  color: #51ACE4;
+  padding-top: 100px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+input[type=submit]{
+  background-color:#51ACE4;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+div.msg-sucesso{
+  width: 400px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: rgba(50,205,50,.3);
+  border: 1px solid rgb(34,139,34);
+  font-weight: bold;
+
+}
+
+div.msg-erro{
+  width: 400px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: rgba(250,128,114,.3);
+  border: 1px solid rgb(165,42,42);
+  
+}
+
+
+::-webkit-input-placeholder {
+ color: #808080;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+ color: #808080;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+ color: #808080;  
+}
+
+:-ms-input-placeholder {  
+ color: #808080;  
+}
+
+.legal{
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+}
+
+.check{
+  display: flex;
+  justify-content: space-between;
+  color: #51ACE4;
+}

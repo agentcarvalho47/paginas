@@ -1,0 +1,68 @@
+<html lang="pt-br">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=0.70">
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>CORUJÃO</title>
+  <link rel="stylesheet" type="text/css" href="..\static\css\estilo.css">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link title="Home" rel="index" href="./">
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/cover/">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar fixed-top bg">
+    <a class="navbar-brand" href="{% url 'home' %}">Página Inicial</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Sobre<span class="sr-only">(current)</span></a>
+        </li>
+
+      </ul>
+
+    </div>
+    <div class="dalila">
+      <a class="btn btn-outline-primary" href="{% url 'login' %}">Login</a></div>
+  </nav>
+
+  <div id="corpo-form">
+    <br>
+    <h1> <b>CORUJÃO</b></h1>
+    <form method="POST">{% csrf_token %}
+
+      <div class="legal">
+
+        <input type="text" autocomplete="off" placeholder="Nome" name="nome" maxlength="20"><br>
+        <input type="email" placeholder="Email" name="email"><br>
+        <input type="password" placeholder="senha" name="senha"><br>
+        <input type="text" placeholder="Matrícula" name="matricula" maxlength="20"><br>
+        <input type="submit" value="Cadastrar-se">
+
+        <div class="check">
+          <div style="height: 80px; width: 109px" class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Professor">
+            <label class="form-check-label" for="inlineRadio1"> <b>Professor </b></label>
+          </div>
+          <div style="height: 80px; width: 80px" class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Aluno">
+            <label class="form-check-label" for="inlineRadio2"> <b>Aluno</b></label>
+          </div>
+        </div>
+    </form>
+  </div>
+  <br>
+</body>
+
+</html>

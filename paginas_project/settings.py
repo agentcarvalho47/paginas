@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'cadastro.apps.CadastroConfig',
     'posts.apps.PostsConfig',
     'paginas.apps.PaginasConfig',
     'django.contrib.admin',
