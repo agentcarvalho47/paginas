@@ -15,4 +15,6 @@ class AreaAlunoPageView(TemplateView):
 	template_name = "areaaluno.html"
 class LogaPageView(TemplateView):
 	template_name = "logged.html"	
+class AreaProfPageView(TemplateView):
+	template_name = "areaprof.html"	
 

@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import HomePageView, CadastroCreateView, LoginPageView, SobrePageView, AreaAlunoPageView, LogaPageView
+from .views import HomePageView, CadastroCreateView, LoginPageView, SobrePageView, AreaAlunoPageView, LogaPageView, AreaProfPageView
 
 urlpatterns = [
     path('', HomePageView.as_view(), name='home'),
@@ -8,5 +8,6 @@ urlpatterns = [
     path('sobre', SobrePageView.as_view(), name='sobre'),
     path('dashboard', AreaAlunoPageView.as_view(), name='dashboard'),
     path('sucessfull', LogaPageView.as_view(), name='sucessfull'),
+    path('areaprof', AreaProfPageView.as_view(), name='areaprof'),
     
 ]
